@@ -1,0 +1,64 @@
+AC_INIT(configure.in)
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE(antigrav, 0.0.3)
+
+AC_CONFIG_HEADERS(config.h)
+
+AC_PROG_CC
+AC_PROG_CXX
+AC_PROG_INSTALL
+AC_PROG_RANLIB
+
+AC_LANG_CPLUSPLUS
+
+AC_STDC_HEADERS
+AC_HEADER_DIRENT
+
+AC_SUBST(datadir)
+AC_SUBST(PACKAGE)
+
+case "$target" in
+  *-*-cygwin* | *-*-mingw32*)
+    MATHLIB=""
+    SYS_GL_LIBS="-lopengl32 -lglu32"
+    ;;
+  *)
+    MATHLIB="-lm"
+      SYS_GL_LIBS="-lGL -lGLU"
+    ;;
+esac
+
+dnl Check for openal
+AC_CHECK_LIB(openal, alGenSources,,AC_MSG_ERROR([*** OpenAL is required ***]),-lz)
+
+dnl Check for alut
+AC_CHECK_LIB(alut, alutInit,,AC_MSG_ERROR([*** ALUT is required ***]),-lz)
+
+dnl Check for libpng
+AC_CHECK_LIB(png, png_create_read_struct,,AC_MSG_ERROR([*** libpng is required ***]),-lz)
+
+AC_ARG_ENABLE([debug],
+	[  --enable-debug	enable debugging features],
+	[debug=$enableval],
+	[debug=no])
+
+dnl AC_DEFINE_UNQUOTED([DEBUG],[],[Debugging]))
+dnl Check for SDL
+AM_PATH_SDL(1.1.5,,AC_MSG_ERROR([*** SDL >= 1.1.5 not found ***]))
+
+HAVE_OPENGL=no
+AC_CHECK_HEADER(GL/gl.h,HAVE_OPENGL=yes,AC_MSG_ERROR([*** OpenGL not found ***]))
+LIBS="$LIBS $SYS_GL_LIBS"
+
+if test "x$debug" = "xyes"
+then
+	AC_DEFINE_UNQUOTED([DEBUG],[],[Debugging])
+	CXXFLAGS="$CXXFLAGS $SDL_CFLAGS -g"
+else
+	CXXFLAGS="$CXXFLAGS $SDL_CFLAGS"
+fi
+
+CFLAGS="$CXXFLAGS"
+LIBS="$LIBS $SDL_LIBS"
+
+AC_OUTPUT(Makefile src/Makefile src/tinyxml/Makefile data/Makefile extra/Makefile)

@@ -1,0 +1,2 @@
+0.0.3
+ * Fix PNG loading crash on 64 bit machines. Thanks to Pascal Giard.

@@ -1,0 +1,843 @@
+<? xml version="1.0" ?>
+<Mesh name="Ring" numVertices="76" numFaces="152" x="0.00000" y="0.00000" z="-0.00000" sx="1.00000" sy="1.00000" sz="1.00000" qw="1.00000" qx="0.00000" qy="0.00000" qz="-0.00000">
+	<Material name="Material" diffuseR="0.8000" diffuseG="0.8000" diffuseB="0.8000" ambientR="0.4000" ambientG="0.4000" ambientB="0.4000" specularR="1.0000" specularG="1.0000" specularB="1.0000" shininess="0.5000"/>
+
+	<Vertex x="-0.01908" y="-0.00000" z="-0.01025" nx="-0.86566" ny="-0.07309" nz="-0.49522"/>
+	<Vertex x="-0.01318" y="-0.00154" z="-0.01682" nx="-0.59841" ny="-0.32835" nz="-0.73077"/>
+	<Vertex x="-0.01437" y="0.00299" z="-0.01471" nx="-0.38838" ny="0.80996" nz="-0.43937"/>
+	<Vertex x="-0.02104" y="0.00021" z="-0.00495" nx="-0.97855" ny="0.08380" nz="-0.18815"/>
+	<Vertex x="-0.01483" y="-0.00330" z="-0.01260" nx="-0.16315" ny="-0.98419" nz="-0.06845"/>
+	<Vertex x="-0.01944" y="0.00322" z="-0.00516" nx="-0.51817" ny="0.84643" nz="-0.12265"/>
+	<Vertex x="-0.02027" y="-0.00298" z="-0.00357" nx="-0.64644" ny="-0.75445" nz="-0.11347"/>
+	<Vertex x="-0.00699" y="0.00047" z="-0.02067" nx="-0.31385" ny="0.05292" nz="-0.94797"/>
+	<Vertex x="-0.01639" y="0.00277" z="-0.00713" nx="0.45497" ny="0.85580" nz="0.24610"/>
+	<Vertex x="-0.01671" y="-0.00289" z="-0.00552" nx="0.49947" ny="-0.85458" nz="0.14203"/>
+	<Vertex x="-0.00516" y="-0.00322" z="-0.01944" nx="-0.12342" ny="-0.87439" nz="-0.46919"/>
+	<Vertex x="-0.00947" y="-0.00135" z="-0.01251" nx="0.52651" ny="-0.54524" nz="0.65224"/>
+	<Vertex x="-0.00955" y="0.00082" z="-0.01227" nx="0.59850" ny="0.34620" nz="0.72243"/>
+	<Vertex x="-0.00357" y="0.00298" z="-0.02027" nx="-0.07755" ny="0.80502" nz="-0.58812"/>
+	<Vertex x="-0.02060" y="-0.00248" z="0.00326" nx="-0.78390" ny="-0.58947" nz="0.19492"/>
+	<Vertex x="-0.01480" y="-0.00004" z="-0.00463" nx="0.93780" ny="0.10086" nz="0.33210"/>
+	<Vertex x="-0.02126" y="0.00027" z="0.00416" nx="-0.99060" ny="0.10050" nz="0.09272"/>
+	<Vertex x="-0.00552" y="0.00289" z="-0.01671" nx="0.16746" ny="0.83477" nz="0.52446"/>
+	<Vertex x="-0.01990" y="0.00309" z="0.00390" nx="-0.56233" ny="0.81246" nz="0.15366"/>
+	<Vertex x="-0.00316" y="-0.00263" z="-0.01681" nx="0.15195" ny="-0.81915" nz="0.55306"/>
+	<Vertex x="-0.00283" y="-0.00006" z="-0.01510" nx="0.21543" ny="-0.10630" nz="0.97070"/>
+	<Vertex x="-0.01510" y="-0.00006" z="0.00283" nx="0.96011" ny="-0.18940" nz="-0.20554"/>
+	<Vertex x="-0.01671" y="0.00289" z="0.00552" nx="0.49251" ny="0.85943" nz="-0.13694"/>
+	<Vertex x="0.00326" y="0.00248" z="-0.02060" nx="0.19492" ny="0.58947" nz="-0.78390"/>
+	<Vertex x="0.00416" y="-0.00027" z="-0.02126" nx="0.08032" ny="-0.08429" nz="-0.99319"/>
+	<Vertex x="-0.01734" y="-0.00324" z="0.00778" nx="0.01294" ny="-0.99966" nz="-0.02155"/>
+	<Vertex x="-0.01908" y="0.00000" z="0.01025" nx="-0.87771" ny="-0.12122" nz="0.46352"/>
+	<Vertex x="0.00390" y="-0.00309" z="-0.01990" nx="0.14652" ny="-0.81735" nz="-0.55718"/>
+	<Vertex x="0.00306" y="0.00003" z="-0.01504" nx="-0.22639" ny="0.16059" nz="0.96069"/>
+	<Vertex x="0.00552" y="-0.00289" z="-0.01671" nx="-0.16160" ny="-0.85116" nz="0.49937"/>
+	<Vertex x="-0.01251" y="-0.00135" z="0.00947" nx="0.66234" ny="-0.44227" nz="-0.60466"/>
+	<Vertex x="0.00778" y="0.00324" z="-0.01734" nx="-0.02329" ny="0.99963" nz="0.01215"/>
+	<Vertex x="-0.01227" y="0.00082" z="0.00955" nx="0.73989" ny="0.31867" nz="-0.59239"/>
+	<Vertex x="0.01025" y="-0.00000" z="-0.01908" nx="0.48280" ny="0.04572" nz="-0.87451"/>
+	<Vertex x="-0.01478" y="0.00291" z="0.01460" nx="-0.50017" ny="0.71673" nz="0.48589"/>
+	<Vertex x="-0.01437" y="-0.00299" z="0.01471" nx="-0.49495" ny="-0.71642" nz="0.49165"/>
+	<Vertex x="0.00947" y="0.00135" z="-0.01251" nx="-0.60692" ny="0.44050" nz="0.66149"/>
+	<Vertex x="0.00955" y="-0.00082" z="-0.01227" nx="-0.59355" ny="-0.31776" nz="0.73937"/>
+	<Vertex x="0.01237" y="-0.00316" z="-0.01558" nx="0.20420" ny="-0.93591" nz="-0.28697"/>
+	<Vertex x="-0.00720" y="0.00000" z="0.01342" nx="0.55300" ny="0.05332" nz="-0.83145"/>
+	<Vertex x="0.01471" y="0.00299" z="-0.01437" nx="0.50587" ny="0.72222" nz="-0.47160"/>
+	<Vertex x="-0.01006" y="-0.00143" z="0.01875" nx="-0.48714" ny="-0.19074" nz="0.85223"/>
+	<Vertex x="-0.00937" y="0.00314" z="0.01827" nx="-0.23460" ny="0.83950" nz="0.49007"/>
+	<Vertex x="-0.00713" y="0.00277" z="0.01639" nx="0.25849" ny="0.82293" nz="-0.50591"/>
+	<Vertex x="0.01682" y="-0.00154" z="-0.01318" nx="0.73898" ny="-0.30250" nz="-0.60195"/>
+	<Vertex x="-0.00552" y="-0.00289" z="0.01671" nx="0.17774" ny="-0.84405" nz="-0.50591"/>
+	<Vertex x="0.01342" y="-0.00000" z="-0.00720" nx="-0.83145" ny="-0.05332" nz="0.55300"/>
+	<Vertex x="-0.00283" y="0.00006" z="0.01510" nx="0.12928" ny="0.13330" nz="-0.98260"/>
+	<Vertex x="0.01639" y="-0.00277" z="-0.00713" nx="-0.51546" ny="-0.80944" nz="0.28120"/>
+	<Vertex x="-0.00390" y="-0.00309" z="0.01990" nx="-0.12574" ny="-0.84191" nz="0.52470"/>
+	<Vertex x="-0.00416" y="-0.00027" z="0.02126" nx="-0.12574" ny="-0.04868" nz="0.99084"/>
+	<Vertex x="-0.00326" y="0.00248" z="0.02060" nx="-0.12012" ny="0.53899" nz="0.83367"/>
+	<Vertex x="0.01671" y="0.00289" z="-0.00552" nx="-0.50279" ny="0.84802" nz="0.16739"/>
+	<Vertex x="0.01510" y="-0.00006" z="-0.00283" nx="-0.98105" ny="-0.15366" nz="0.11780"/>
+	<Vertex x="0.00306" y="-0.00003" z="0.01504" nx="-0.22556" ny="-0.09372" nz="-0.96970"/>
+	<Vertex x="0.01944" y="-0.00322" z="-0.00516" nx="0.47090" ny="-0.87530" nz="-0.10990"/>
+	<Vertex x="0.02067" y="0.00047" z="-0.00699" nx="0.94797" ny="0.05292" nz="-0.31385"/>
+	<Vertex x="0.00316" y="-0.00263" z="0.01681" nx="-0.15378" ny="-0.81866" nz="-0.55330"/>
+	<Vertex x="0.02027" y="0.00298" z="-0.00357" nx="0.60201" ny="0.79479" nz="-0.07633"/>
+	<Vertex x="0.00552" y="0.00289" z="0.01671" nx="-0.14197" ny="0.85928" nz="-0.49135"/>
+	<Vertex x="0.01480" y="-0.00004" z="0.00463" nx="-0.93780" ny="0.10086" nz="-0.33210"/>
+	<Vertex x="0.00357" y="0.00298" z="0.02027" nx="0.07746" ny="0.79318" nz="0.60402"/>
+	<Vertex x="0.00947" y="-0.00135" z="0.01251" nx="-0.52864" ny="-0.54204" nz="-0.65319"/>
+	<Vertex x="0.00955" y="0.00082" z="0.01227" nx="-0.59966" ny="0.34529" nz="-0.72192"/>
+	<Vertex x="0.00516" y="-0.00322" z="0.01944" nx="0.11969" ny="-0.87609" nz="0.46702"/>
+	<Vertex x="0.01671" y="-0.00289" z="0.00552" nx="-0.47261" ny="-0.87320" nz="-0.11890"/>
+	<Vertex x="0.01639" y="0.00277" z="0.00713" nx="-0.45357" ny="0.85867" nz="-0.23862"/>
+	<Vertex x="0.00699" y="0.00047" z="0.02067" nx="0.31010" ny="0.04117" nz="0.94980"/>
+	<Vertex x="0.01990" y="-0.00309" z="0.00390" nx="0.50954" ny="-0.85293" nz="0.11344"/>
+	<Vertex x="0.02060" y="0.00248" z="0.00326" nx="0.83367" ny="0.53902" nz="0.12012"/>
+	<Vertex x="0.01483" y="-0.00330" z="0.01260" nx="0.11576" ny="-0.99203" nz="0.04956"/>
+	<Vertex x="0.02126" y="-0.00027" z="0.00416" nx="0.99084" ny="-0.04868" nz="0.12574"/>
+	<Vertex x="0.01827" y="0.00314" z="0.00937" nx="0.49007" ny="0.83950" nz="0.23460"/>
+	<Vertex x="0.01284" y="-0.00166" z="0.01700" nx="0.58132" ny="-0.37834" nz="0.72033"/>
+	<Vertex x="0.01461" y="0.00291" z="0.01478" nx="0.44343" ny="0.74651" nz="0.49602"/>
+	<Vertex x="0.01875" y="-0.00143" z="0.01006" nx="0.82543" ny="-0.26801" nz="0.49675"/>
+
+	<Face smooth="1" nx="-0.55833" ny="0.16872" nz="0.81228" texture="-1" material="0">
+		<Vertex index="41" />
+		<Vertex index="42" />
+		<Vertex index="34" />
+	</Face>
+	<Face smooth="1" nx="-0.84235" ny="0.42687" nz="-0.32900" texture="-1" material="0">
+		<Vertex index="5" />
+		<Vertex index="0" />
+		<Vertex index="3" />
+	</Face>
+	<Face smooth="1" nx="-0.30768" ny="0.31599" nz="0.89749" texture="-1" material="0">
+		<Vertex index="50" />
+		<Vertex index="51" />
+		<Vertex index="42" />
+	</Face>
+	<Face smooth="1" nx="-0.26216" ny="-0.74992" nz="-0.60737" texture="-1" material="0">
+		<Vertex index="62" />
+		<Vertex index="70" />
+		<Vertex index="57" />
+	</Face>
+	<Face smooth="1" nx="-0.88394" ny="-0.34752" nz="-0.31286" texture="-1" material="0">
+		<Vertex index="3" />
+		<Vertex index="0" />
+		<Vertex index="6" />
+	</Face>
+	<Face smooth="1" nx="-0.05356" ny="-0.99463" nz="0.08854" texture="-1" material="0">
+		<Vertex index="29" />
+		<Vertex index="27" />
+		<Vertex index="38" />
+	</Face>
+	<Face smooth="1" nx="-0.31015" ny="-0.72752" nz="0.61198" texture="-1" material="0">
+		<Vertex index="49" />
+		<Vertex index="41" />
+		<Vertex index="35" />
+	</Face>
+	<Face smooth="1" nx="0.47310" ny="-0.81873" nz="-0.32535" texture="-1" material="0">
+		<Vertex index="38" />
+		<Vertex index="44" />
+		<Vertex index="55" />
+	</Face>
+	<Face smooth="1" nx="0.03027" ny="0.22401" nz="0.97412" texture="-1" material="0">
+		<Vertex index="61" />
+		<Vertex index="51" />
+		<Vertex index="50" />
+	</Face>
+	<Face smooth="1" nx="-0.02591" ny="0.99962" nz="0.00916" texture="-1" material="0">
+		<Vertex index="13" />
+		<Vertex index="17" />
+		<Vertex index="31" />
+	</Face>
+	<Face smooth="1" nx="-0.66905" ny="-0.64226" nz="0.37400" texture="-1" material="0">
+		<Vertex index="25" />
+		<Vertex index="26" />
+		<Vertex index="14" />
+	</Face>
+	<Face smooth="1" nx="0.01672" ny="-0.99845" nz="0.05309" texture="-1" material="0">
+		<Vertex index="10" />
+		<Vertex index="27" />
+		<Vertex index="29" />
+	</Face>
+	<Face smooth="1" nx="0.33597" ny="-0.93110" nz="0.14208" texture="-1" material="0">
+		<Vertex index="9" />
+		<Vertex index="4" />
+		<Vertex index="11" />
+	</Face>
+	<Face smooth="1" nx="0.01862" ny="0.99926" nz="0.03353" texture="-1" material="0">
+		<Vertex index="2" />
+		<Vertex index="17" />
+		<Vertex index="13" />
+	</Face>
+	<Face smooth="1" nx="-0.33597" ny="-0.93110" nz="-0.14208" texture="-1" material="0">
+		<Vertex index="65" />
+		<Vertex index="70" />
+		<Vertex index="62" />
+	</Face>
+	<Face smooth="1" nx="-0.89751" ny="-0.31598" nz="0.30764" texture="-1" material="0">
+		<Vertex index="26" />
+		<Vertex index="16" />
+		<Vertex index="14" />
+	</Face>
+	<Face smooth="1" nx="0.62625" ny="0.31125" nz="0.71480" texture="-1" material="0">
+		<Vertex index="8" />
+		<Vertex index="12" />
+		<Vertex index="17" />
+	</Face>
+	<Face smooth="1" nx="0.03258" ny="-0.96959" nz="-0.24255" texture="-1" material="0">
+		<Vertex index="57" />
+		<Vertex index="64" />
+		<Vertex index="45" />
+	</Face>
+	<Face smooth="1" nx="-0.62625" ny="0.31125" nz="-0.71480" texture="-1" material="0">
+		<Vertex index="66" />
+		<Vertex index="63" />
+		<Vertex index="59" />
+	</Face>
+	<Face smooth="1" nx="-0.66346" ny="-0.70628" nz="0.24696" texture="-1" material="0">
+		<Vertex index="46" />
+		<Vertex index="48" />
+		<Vertex index="53" />
+	</Face>
+	<Face smooth="1" nx="-0.27756" ny="-0.43837" nz="0.85487" texture="-1" material="0">
+		<Vertex index="49" />
+		<Vertex index="50" />
+		<Vertex index="41" />
+	</Face>
+	<Face smooth="1" nx="0.35884" ny="0.67671" nz="0.64288" texture="-1" material="0">
+		<Vertex index="17" />
+		<Vertex index="12" />
+		<Vertex index="20" />
+	</Face>
+	<Face smooth="1" nx="0.05029" ny="0.98945" nz="-0.13587" texture="-1" material="0">
+		<Vertex index="42" />
+		<Vertex index="43" />
+		<Vertex index="34" />
+	</Face>
+	<Face smooth="1" nx="0.32652" ny="0.62675" nz="-0.70751" texture="-1" material="0">
+		<Vertex index="33" />
+		<Vertex index="31" />
+		<Vertex index="40" />
+	</Face>
+	<Face smooth="1" nx="0.00312" ny="-0.99938" nz="0.03510" texture="-1" material="0">
+		<Vertex index="45" />
+		<Vertex index="35" />
+		<Vertex index="25" />
+	</Face>
+	<Face smooth="1" nx="-0.68943" ny="-0.60777" nz="-0.39409" texture="-1" material="0">
+		<Vertex index="6" />
+		<Vertex index="0" />
+		<Vertex index="4" />
+	</Face>
+	<Face smooth="1" nx="0.07279" ny="-0.34787" nz="0.93471" texture="-1" material="0">
+		<Vertex index="64" />
+		<Vertex index="67" />
+		<Vertex index="50" />
+	</Face>
+	<Face smooth="1" nx="0.03968" ny="-0.43167" nz="0.90116" texture="-1" material="0">
+		<Vertex index="64" />
+		<Vertex index="50" />
+		<Vertex index="49" />
+	</Face>
+	<Face smooth="1" nx="-0.05059" ny="-0.99625" nz="0.07020" texture="-1" material="0">
+		<Vertex index="29" />
+		<Vertex index="38" />
+		<Vertex index="48" />
+	</Face>
+	<Face smooth="1" nx="0.03510" ny="0.99938" nz="0.00312" texture="-1" material="0">
+		<Vertex index="40" />
+		<Vertex index="31" />
+		<Vertex index="52" />
+	</Face>
+	<Face smooth="1" nx="0.54441" ny="-0.43176" nz="-0.71917" texture="-1" material="0">
+		<Vertex index="38" />
+		<Vertex index="33" />
+		<Vertex index="44" />
+	</Face>
+	<Face smooth="1" nx="0.35145" ny="-0.44823" nz="0.82193" texture="-1" material="0">
+		<Vertex index="73" />
+		<Vertex index="67" />
+		<Vertex index="64" />
+	</Face>
+	<Face smooth="1" nx="-0.13587" ny="0.98945" nz="-0.05029" texture="-1" material="0">
+		<Vertex index="72" />
+		<Vertex index="66" />
+		<Vertex index="74" />
+	</Face>
+	<Face smooth="1" nx="0.64288" ny="0.67671" nz="-0.35884" texture="-1" material="0">
+		<Vertex index="22" />
+		<Vertex index="32" />
+		<Vertex index="21" />
+	</Face>
+	<Face smooth="1" nx="0.71480" ny="0.31125" nz="-0.62625" texture="-1" material="0">
+		<Vertex index="43" />
+		<Vertex index="32" />
+		<Vertex index="22" />
+	</Face>
+	<Face smooth="1" nx="0.01874" ny="0.99924" nz="0.03409" texture="-1" material="0">
+		<Vertex index="2" />
+		<Vertex index="8" />
+		<Vertex index="17" />
+	</Face>
+	<Face smooth="1" nx="0.85486" ny="-0.43837" nz="0.27756" texture="-1" material="0">
+		<Vertex index="68" />
+		<Vertex index="71" />
+		<Vertex index="75" />
+	</Face>
+	<Face smooth="1" nx="-0.00456" ny="0.97990" nz="-0.19945" texture="-1" material="0">
+		<Vertex index="59" />
+		<Vertex index="43" />
+		<Vertex index="42" />
+	</Face>
+	<Face smooth="1" nx="-0.36321" ny="0.60738" nz="-0.70652" texture="-1" material="0">
+		<Vertex index="7" />
+		<Vertex index="2" />
+		<Vertex index="13" />
+	</Face>
+	<Face smooth="1" nx="-0.03823" ny="0.20616" nz="-0.97777" texture="-1" material="0">
+		<Vertex index="7" />
+		<Vertex index="13" />
+		<Vertex index="24" />
+	</Face>
+	<Face smooth="1" nx="-0.82704" ny="-0.56125" nz="-0.03169" texture="-1" material="0">
+		<Vertex index="53" />
+		<Vertex index="65" />
+		<Vertex index="60" />
+	</Face>
+	<Face smooth="1" nx="-0.56570" ny="0.22141" nz="-0.79433" texture="-1" material="0">
+		<Vertex index="1" />
+		<Vertex index="2" />
+		<Vertex index="7" />
+	</Face>
+	<Face smooth="1" nx="0.93471" ny="-0.34788" nz="-0.07279" texture="-1" material="0">
+		<Vertex index="55" />
+		<Vertex index="56" />
+		<Vertex index="71" />
+	</Face>
+	<Face smooth="1" nx="0.90116" ny="-0.43167" nz="-0.03968" texture="-1" material="0">
+		<Vertex index="55" />
+		<Vertex index="71" />
+		<Vertex index="68" />
+	</Face>
+	<Face smooth="1" nx="-0.38085" ny="-0.08701" nz="-0.92053" texture="-1" material="0">
+		<Vertex index="63" />
+		<Vertex index="62" />
+		<Vertex index="54" />
+	</Face>
+	<Face smooth="1" nx="0.46508" ny="-0.66000" nz="-0.59000" texture="-1" material="0">
+		<Vertex index="45" />
+		<Vertex index="25" />
+		<Vertex index="30" />
+	</Face>
+	<Face smooth="1" nx="0.10687" ny="-0.98439" nz="0.13986" texture="-1" material="0">
+		<Vertex index="4" />
+		<Vertex index="10" />
+		<Vertex index="19" />
+	</Face>
+	<Face smooth="1" nx="0.81653" ny="-0.45092" nz="-0.36050" texture="-1" material="0">
+		<Vertex index="44" />
+		<Vertex index="56" />
+		<Vertex index="55" />
+	</Face>
+	<Face smooth="1" nx="-0.74683" ny="0.55504" nz="0.36630" texture="-1" material="0">
+		<Vertex index="26" />
+		<Vertex index="34" />
+		<Vertex index="18" />
+	</Face>
+	<Face smooth="1" nx="0.37063" ny="-0.56686" nz="-0.73574" texture="-1" material="0">
+		<Vertex index="27" />
+		<Vertex index="33" />
+		<Vertex index="38" />
+	</Face>
+	<Face smooth="1" nx="0.02026" ny="0.99977" nz="-0.00655" texture="-1" material="0">
+		<Vertex index="34" />
+		<Vertex index="43" />
+		<Vertex index="22" />
+	</Face>
+	<Face smooth="1" nx="-0.90116" ny="0.43167" nz="-0.03968" texture="-1" material="0">
+		<Vertex index="16" />
+		<Vertex index="18" />
+		<Vertex index="5" />
+	</Face>
+	<Face smooth="1" nx="0.32030" ny="-0.43568" nz="-0.84118" texture="-1" material="0">
+		<Vertex index="27" />
+		<Vertex index="24" />
+		<Vertex index="33" />
+	</Face>
+	<Face smooth="1" nx="0.05469" ny="0.95280" nz="-0.29865" texture="-1" material="0">
+		<Vertex index="13" />
+		<Vertex index="31" />
+		<Vertex index="23" />
+	</Face>
+	<Face smooth="1" nx="0.79433" ny="0.22141" nz="-0.56570" texture="-1" material="0">
+		<Vertex index="44" />
+		<Vertex index="40" />
+		<Vertex index="56" />
+	</Face>
+	<Face smooth="1" nx="-0.40338" ny="-0.52696" nz="-0.74806" texture="-1" material="0">
+		<Vertex index="62" />
+		<Vertex index="57" />
+		<Vertex index="54" />
+	</Face>
+	<Face smooth="1" nx="-0.59000" ny="0.65999" nz="0.46508" texture="-1" material="0">
+		<Vertex index="31" />
+		<Vertex index="36" />
+		<Vertex index="52" />
+	</Face>
+	<Face smooth="1" nx="0.26216" ny="-0.74991" nz="0.60737" texture="-1" material="0">
+		<Vertex index="11" />
+		<Vertex index="4" />
+		<Vertex index="19" />
+	</Face>
+	<Face smooth="1" nx="-0.07279" ny="-0.34788" nz="-0.93471" texture="-1" material="0">
+		<Vertex index="10" />
+		<Vertex index="7" />
+		<Vertex index="24" />
+	</Face>
+	<Face smooth="1" nx="-0.03968" ny="-0.43168" nz="-0.90116" texture="-1" material="0">
+		<Vertex index="10" />
+		<Vertex index="24" />
+		<Vertex index="27" />
+	</Face>
+	<Face smooth="1" nx="-0.02692" ny="-0.55114" nz="0.83398" texture="-1" material="0">
+		<Vertex index="20" />
+		<Vertex index="19" />
+		<Vertex index="29" />
+	</Face>
+	<Face smooth="1" nx="0.30764" ny="0.31598" nz="-0.89751" texture="-1" material="0">
+		<Vertex index="24" />
+		<Vertex index="23" />
+		<Vertex index="33" />
+	</Face>
+	<Face smooth="1" nx="0.01516" ny="0.99977" nz="-0.01505" texture="-1" material="0">
+		<Vertex index="61" />
+		<Vertex index="59" />
+		<Vertex index="42" />
+	</Face>
+	<Face smooth="1" nx="-0.36050" ny="-0.45092" nz="-0.81653" texture="-1" material="0">
+		<Vertex index="7" />
+		<Vertex index="10" />
+		<Vertex index="1" />
+	</Face>
+	<Face smooth="1" nx="-0.32450" ny="-0.82165" nz="-0.46860" texture="-1" material="0">
+		<Vertex index="1" />
+		<Vertex index="10" />
+		<Vertex index="4" />
+	</Face>
+	<Face smooth="1" nx="-0.62638" ny="-0.58044" nz="-0.52033" texture="-1" material="0">
+		<Vertex index="60" />
+		<Vertex index="65" />
+		<Vertex index="62" />
+	</Face>
+	<Face smooth="1" nx="0.31239" ny="-0.83573" nz="0.45163" texture="-1" material="0">
+		<Vertex index="70" />
+		<Vertex index="73" />
+		<Vertex index="64" />
+	</Face>
+	<Face smooth="1" nx="0.61505" ny="-0.60691" nz="0.50336" texture="-1" material="0">
+		<Vertex index="70" />
+		<Vertex index="75" />
+		<Vertex index="73" />
+	</Face>
+	<Face smooth="1" nx="-0.73075" ny="0.55263" nz="-0.40076" texture="-1" material="0">
+		<Vertex index="0" />
+		<Vertex index="5" />
+		<Vertex index="2" />
+	</Face>
+	<Face smooth="1" nx="0.89750" ny="0.15548" nz="0.41270" texture="-1" material="0">
+		<Vertex index="71" />
+		<Vertex index="72" />
+		<Vertex index="75" />
+	</Face>
+	<Face smooth="1" nx="0.62637" ny="-0.58044" nz="0.52033" texture="-1" material="0">
+		<Vertex index="15" />
+		<Vertex index="9" />
+		<Vertex index="11" />
+	</Face>
+	<Face smooth="1" nx="-0.10687" ny="-0.98439" nz="-0.13986" texture="-1" material="0">
+		<Vertex index="70" />
+		<Vertex index="64" />
+		<Vertex index="57" />
+	</Face>
+	<Face smooth="1" nx="-0.97412" ny="-0.22400" nz="-0.03027" texture="-1" material="0">
+		<Vertex index="14" />
+		<Vertex index="16" />
+		<Vertex index="6" />
+	</Face>
+	<Face smooth="1" nx="-0.62625" ny="-0.31125" nz="0.71480" texture="-1" material="0">
+		<Vertex index="37" />
+		<Vertex index="29" />
+		<Vertex index="48" />
+	</Face>
+	<Face smooth="1" nx="-0.72330" ny="0.12619" nz="-0.67890" texture="-1" material="0">
+		<Vertex index="0" />
+		<Vertex index="2" />
+		<Vertex index="1" />
+	</Face>
+	<Face smooth="1" nx="-0.89169" ny="-0.45230" nz="0.01775" texture="-1" material="0">
+		<Vertex index="53" />
+		<Vertex index="48" />
+		<Vertex index="65" />
+	</Face>
+	<Face smooth="1" nx="-0.01672" ny="-0.99845" nz="-0.05309" texture="-1" material="0">
+		<Vertex index="64" />
+		<Vertex index="49" />
+		<Vertex index="45" />
+	</Face>
+	<Face smooth="1" nx="0.70652" ny="0.60738" nz="-0.36321" texture="-1" material="0">
+		<Vertex index="56" />
+		<Vertex index="40" />
+		<Vertex index="58" />
+	</Face>
+	<Face smooth="1" nx="-0.10372" ny="-0.99106" nz="-0.08389" texture="-1" material="0">
+		<Vertex index="65" />
+		<Vertex index="68" />
+		<Vertex index="70" />
+	</Face>
+	<Face smooth="1" nx="0.38748" ny="0.92062" nz="0.04812" texture="-1" material="0">
+		<Vertex index="58" />
+		<Vertex index="72" />
+		<Vertex index="69" />
+	</Face>
+	<Face smooth="1" nx="0.89749" ny="0.31599" nz="0.30768" texture="-1" material="0">
+		<Vertex index="71" />
+		<Vertex index="69" />
+		<Vertex index="72" />
+	</Face>
+	<Face smooth="1" nx="0.35865" ny="0.60220" nz="0.71325" texture="-1" material="0">
+		<Vertex index="67" />
+		<Vertex index="74" />
+		<Vertex index="61" />
+	</Face>
+	<Face smooth="1" nx="0.37708" ny="-0.08732" nz="0.92205" texture="-1" material="0">
+		<Vertex index="12" />
+		<Vertex index="11" />
+		<Vertex index="20" />
+	</Face>
+	<Face smooth="1" nx="0.89147" ny="0.45157" nz="0.03691" texture="-1" material="0">
+		<Vertex index="22" />
+		<Vertex index="21" />
+		<Vertex index="15" />
+	</Face>
+	<Face smooth="1" nx="-0.79760" ny="0.03599" nz="0.60211" texture="-1" material="0">
+		<Vertex index="36" />
+		<Vertex index="37" />
+		<Vertex index="46" />
+	</Face>
+	<Face smooth="1" nx="-0.89148" ny="0.45156" nz="-0.03691" texture="-1" material="0">
+		<Vertex index="52" />
+		<Vertex index="53" />
+		<Vertex index="60" />
+	</Face>
+	<Face smooth="1" nx="-0.01631" ny="0.46646" nz="0.88439" texture="-1" material="0">
+		<Vertex index="17" />
+		<Vertex index="20" />
+		<Vertex index="28" />
+	</Face>
+	<Face smooth="1" nx="0.97412" ny="0.22401" nz="-0.03027" texture="-1" material="0">
+		<Vertex index="58" />
+		<Vertex index="69" />
+		<Vertex index="71" />
+	</Face>
+	<Face smooth="1" nx="-0.86359" ny="0.50392" nz="-0.01655" texture="-1" material="0">
+		<Vertex index="52" />
+		<Vertex index="60" />
+		<Vertex index="66" />
+	</Face>
+	<Face smooth="1" nx="0.54037" ny="0.60935" nz="-0.58025" texture="-1" material="0">
+		<Vertex index="43" />
+		<Vertex index="39" />
+		<Vertex index="32" />
+	</Face>
+	<Face smooth="1" nx="-0.88270" ny="0.46932" nz="-0.02414" texture="-1" material="0">
+		<Vertex index="16" />
+		<Vertex index="5" />
+		<Vertex index="3" />
+	</Face>
+	<Face smooth="1" nx="-0.00815" ny="0.99958" nz="-0.02781" texture="-1" material="0">
+		<Vertex index="74" />
+		<Vertex index="59" />
+		<Vertex index="61" />
+	</Face>
+	<Face smooth="1" nx="-0.00210" ny="0.49713" nz="-0.86767" texture="-1" material="0">
+		<Vertex index="59" />
+		<Vertex index="54" />
+		<Vertex index="47" />
+	</Face>
+	<Face smooth="1" nx="0.76082" ny="0.02175" nz="0.64860" texture="-1" material="0">
+		<Vertex index="75" />
+		<Vertex index="74" />
+		<Vertex index="73" />
+	</Face>
+	<Face smooth="1" nx="-0.14138" ny="-0.98994" nz="-0.00610" texture="-1" material="0">
+		<Vertex index="48" />
+		<Vertex index="55" />
+		<Vertex index="65" />
+	</Face>
+	<Face smooth="1" nx="0.28242" ny="-0.64412" nz="-0.71088" texture="-1" material="0">
+		<Vertex index="47" />
+		<Vertex index="45" />
+		<Vertex index="39" />
+	</Face>
+	<Face smooth="1" nx="0.06345" ny="-0.99528" nz="0.07345" texture="-1" material="0">
+		<Vertex index="9" />
+		<Vertex index="6" />
+		<Vertex index="4" />
+	</Face>
+	<Face smooth="1" nx="-0.70751" ny="-0.62675" nz="0.32652" texture="-1" material="0">
+		<Vertex index="35" />
+		<Vertex index="26" />
+		<Vertex index="25" />
+	</Face>
+	<Face smooth="1" nx="0.19568" ny="0.97734" nz="0.08067" texture="-1" material="0">
+		<Vertex index="5" />
+		<Vertex index="8" />
+		<Vertex index="2" />
+	</Face>
+	<Face smooth="1" nx="-0.36240" ny="-0.67326" nz="0.64450" texture="-1" material="0">
+		<Vertex index="28" />
+		<Vertex index="29" />
+		<Vertex index="37" />
+	</Face>
+	<Face smooth="1" nx="0.44318" ny="-0.83147" nz="-0.33504" texture="-1" material="0">
+		<Vertex index="30" />
+		<Vertex index="25" />
+		<Vertex index="21" />
+	</Face>
+	<Face smooth="1" nx="-0.04812" ny="0.92062" nz="0.38748" texture="-1" material="0">
+		<Vertex index="61" />
+		<Vertex index="42" />
+		<Vertex index="51" />
+	</Face>
+	<Face smooth="1" nx="-0.24433" ny="-0.95629" nz="0.16063" texture="-1" material="0">
+		<Vertex index="48" />
+		<Vertex index="38" />
+		<Vertex index="55" />
+	</Face>
+	<Face smooth="1" nx="0.02813" ny="-0.99673" nz="-0.07576" texture="-1" material="0">
+		<Vertex index="45" />
+		<Vertex index="49" />
+		<Vertex index="35" />
+	</Face>
+	<Face smooth="1" nx="0.14138" ny="0.98994" nz="-0.00610" texture="-1" material="0">
+		<Vertex index="22" />
+		<Vertex index="8" />
+		<Vertex index="5" />
+	</Face>
+	<Face smooth="1" nx="-0.03353" ny="0.99926" nz="0.01862" texture="-1" material="0">
+		<Vertex index="40" />
+		<Vertex index="52" />
+		<Vertex index="58" />
+	</Face>
+	<Face smooth="1" nx="0.81228" ny="0.16873" nz="0.55833" texture="-1" material="0">
+		<Vertex index="75" />
+		<Vertex index="72" />
+		<Vertex index="74" />
+	</Face>
+	<Face smooth="1" nx="0.37400" ny="0.64226" nz="-0.66905" texture="-1" material="0">
+		<Vertex index="23" />
+		<Vertex index="31" />
+		<Vertex index="33" />
+	</Face>
+	<Face smooth="1" nx="0.83587" ny="-0.54833" nz="0.02560" texture="-1" material="0">
+		<Vertex index="21" />
+		<Vertex index="25" />
+		<Vertex index="9" />
+	</Face>
+	<Face smooth="1" nx="-0.01505" ny="0.99977" nz="-0.01516" texture="-1" material="0">
+		<Vertex index="58" />
+		<Vertex index="52" />
+		<Vertex index="72" />
+	</Face>
+	<Face smooth="1" nx="-0.36240" ny="0.67326" nz="-0.64450" texture="-1" material="0">
+		<Vertex index="59" />
+		<Vertex index="63" />
+		<Vertex index="54" />
+	</Face>
+	<Face smooth="1" nx="0.82704" ny="-0.56125" nz="0.03169" texture="-1" material="0">
+		<Vertex index="21" />
+		<Vertex index="9" />
+		<Vertex index="15" />
+	</Face>
+	<Face smooth="1" nx="0.82550" ny="-0.03068" nz="0.56356" texture="-1" material="0">
+		<Vertex index="15" />
+		<Vertex index="11" />
+		<Vertex index="12" />
+	</Face>
+	<Face smooth="1" nx="-0.58025" ny="-0.60935" nz="0.54037" texture="-1" material="0">
+		<Vertex index="37" />
+		<Vertex index="48" />
+		<Vertex index="46" />
+	</Face>
+	<Face smooth="1" nx="-0.03027" ny="0.22401" nz="-0.97412" texture="-1" material="0">
+		<Vertex index="13" />
+		<Vertex index="23" />
+		<Vertex index="24" />
+	</Face>
+	<Face smooth="1" nx="-0.38085" ny="0.08701" nz="0.92053" texture="-1" material="0">
+		<Vertex index="28" />
+		<Vertex index="37" />
+		<Vertex index="36" />
+	</Face>
+	<Face smooth="1" nx="0.03823" ny="0.20616" nz="0.97777" texture="-1" material="0">
+		<Vertex index="67" />
+		<Vertex index="61" />
+		<Vertex index="50" />
+	</Face>
+	<Face smooth="1" nx="-0.34542" ny="0.82634" nz="0.44480" texture="-1" material="0">
+		<Vertex index="31" />
+		<Vertex index="28" />
+		<Vertex index="36" />
+	</Face>
+	<Face smooth="1" nx="0.60211" ny="-0.03599" nz="-0.79760" texture="-1" material="0">
+		<Vertex index="39" />
+		<Vertex index="30" />
+		<Vertex index="32" />
+	</Face>
+	<Face smooth="1" nx="0.00916" ny="-0.99962" nz="-0.02591" texture="-1" material="0">
+		<Vertex index="25" />
+		<Vertex index="6" />
+		<Vertex index="9" />
+	</Face>
+	<Face smooth="1" nx="0.02719" ny="-0.56279" nz="-0.82615" texture="-1" material="0">
+		<Vertex index="54" />
+		<Vertex index="57" />
+		<Vertex index="45" />
+	</Face>
+	<Face smooth="1" nx="-0.41270" ny="0.15548" nz="0.89750" texture="-1" material="0">
+		<Vertex index="50" />
+		<Vertex index="42" />
+		<Vertex index="41" />
+	</Face>
+	<Face smooth="1" nx="0.86359" ny="0.50392" nz="0.01655" texture="-1" material="0">
+		<Vertex index="22" />
+		<Vertex index="15" />
+		<Vertex index="8" />
+	</Face>
+	<Face smooth="1" nx="-0.01631" ny="-0.46647" nz="-0.88439" texture="-1" material="0">
+		<Vertex index="54" />
+		<Vertex index="45" />
+		<Vertex index="47" />
+	</Face>
+	<Face smooth="1" nx="0.97777" ny="0.20616" nz="-0.03823" texture="-1" material="0">
+		<Vertex index="56" />
+		<Vertex index="58" />
+		<Vertex index="71" />
+	</Face>
+	<Face smooth="1" nx="0.60831" ny="-0.41566" nz="-0.67615" texture="-1" material="0">
+		<Vertex index="39" />
+		<Vertex index="45" />
+		<Vertex index="30" />
+	</Face>
+	<Face smooth="1" nx="0.56746" ny="0.17221" nz="0.80519" texture="-1" material="0">
+		<Vertex index="73" />
+		<Vertex index="74" />
+		<Vertex index="67" />
+	</Face>
+	<Face smooth="1" nx="0.67890" ny="0.12619" nz="-0.72330" texture="-1" material="0">
+		<Vertex index="33" />
+		<Vertex index="40" />
+		<Vertex index="44" />
+	</Face>
+	<Face smooth="1" nx="0.54180" ny="0.70903" nz="0.45136" texture="-1" material="0">
+		<Vertex index="8" />
+		<Vertex index="15" />
+		<Vertex index="12" />
+	</Face>
+	<Face smooth="1" nx="0.05309" ny="0.99845" nz="0.01672" texture="-1" material="0">
+		<Vertex index="18" />
+		<Vertex index="22" />
+		<Vertex index="5" />
+	</Face>
+	<Face smooth="1" nx="-0.84119" ny="0.43568" nz="0.32030" texture="-1" material="0">
+		<Vertex index="18" />
+		<Vertex index="16" />
+		<Vertex index="26" />
+	</Face>
+	<Face smooth="1" nx="-0.00210" ny="-0.49713" nz="0.86767" texture="-1" material="0">
+		<Vertex index="20" />
+		<Vertex index="29" />
+		<Vertex index="28" />
+	</Face>
+	<Face smooth="1" nx="-0.68709" ny="-0.53523" nz="-0.49136" texture="-1" material="0">
+		<Vertex index="4" />
+		<Vertex index="0" />
+		<Vertex index="1" />
+	</Face>
+	<Face smooth="1" nx="-0.05309" ny="-0.99845" nz="0.01672" texture="-1" material="0">
+		<Vertex index="55" />
+		<Vertex index="68" />
+		<Vertex index="65" />
+	</Face>
+	<Face smooth="1" nx="0.07023" ny="0.99738" nz="-0.01716" texture="-1" material="0">
+		<Vertex index="34" />
+		<Vertex index="22" />
+		<Vertex index="18" />
+	</Face>
+	<Face smooth="1" nx="-0.54180" ny="0.70903" nz="-0.45136" texture="-1" material="0">
+		<Vertex index="66" />
+		<Vertex index="60" />
+		<Vertex index="63" />
+	</Face>
+	<Face smooth="1" nx="-0.71088" ny="0.64412" nz="0.28242" texture="-1" material="0">
+		<Vertex index="52" />
+		<Vertex index="46" />
+		<Vertex index="53" />
+	</Face>
+	<Face smooth="1" nx="-0.97001" ny="-0.24205" nz="-0.02217" texture="-1" material="0">
+		<Vertex index="16" />
+		<Vertex index="3" />
+		<Vertex index="6" />
+	</Face>
+	<Face smooth="1" nx="0.02503" ny="0.55819" nz="0.82934" texture="-1" material="0">
+		<Vertex index="17" />
+		<Vertex index="28" />
+		<Vertex index="31" />
+	</Face>
+	<Face smooth="1" nx="0.24696" ny="0.70628" nz="-0.66346" texture="-1" material="0">
+		<Vertex index="43" />
+		<Vertex index="47" />
+		<Vertex index="39" />
+	</Face>
+	<Face smooth="1" nx="0.56542" ny="-0.76383" nz="0.31124" texture="-1" material="0">
+		<Vertex index="68" />
+		<Vertex index="75" />
+		<Vertex index="70" />
+	</Face>
+	<Face smooth="1" nx="-0.19945" ny="0.97990" nz="0.00456" texture="-1" material="0">
+		<Vertex index="52" />
+		<Vertex index="66" />
+		<Vertex index="72" />
+	</Face>
+	<Face smooth="1" nx="-0.03258" ny="-0.96959" nz="0.24255" texture="-1" material="0">
+		<Vertex index="19" />
+		<Vertex index="10" />
+		<Vertex index="29" />
+	</Face>
+	<Face smooth="1" nx="-0.82550" ny="-0.03068" nz="-0.56356" texture="-1" material="0">
+		<Vertex index="60" />
+		<Vertex index="62" />
+		<Vertex index="63" />
+	</Face>
+	<Face smooth="1" nx="-0.69915" ny="-0.03572" nz="0.71408" texture="-1" material="0">
+		<Vertex index="35" />
+		<Vertex index="34" />
+		<Vertex index="26" />
+	</Face>
+	<Face smooth="1" nx="0.01775" ny="0.45230" nz="-0.89169" texture="-1" material="0">
+		<Vertex index="59" />
+		<Vertex index="47" />
+		<Vertex index="43" />
+	</Face>
+	<Face smooth="1" nx="-0.29865" ny="-0.95280" nz="0.05469" texture="-1" material="0">
+		<Vertex index="25" />
+		<Vertex index="14" />
+		<Vertex index="6" />
+	</Face>
+	<Face smooth="1" nx="-0.67719" ny="-0.03384" nz="0.73503" texture="-1" material="0">
+		<Vertex index="41" />
+		<Vertex index="34" />
+		<Vertex index="35" />
+	</Face>
+	<Face smooth="1" nx="-0.00655" ny="0.99977" nz="-0.02026" texture="-1" material="0">
+		<Vertex index="74" />
+		<Vertex index="66" />
+		<Vertex index="59" />
+	</Face>
+	<Face smooth="1" nx="0.39511" ny="-0.54326" nz="0.74078" texture="-1" material="0">
+		<Vertex index="11" />
+		<Vertex index="19" />
+		<Vertex index="20" />
+	</Face>
+	<Face smooth="1" nx="-0.67615" ny="0.41566" nz="0.60831" texture="-1" material="0">
+		<Vertex index="36" />
+		<Vertex index="46" />
+		<Vertex index="52" />
+	</Face>
+	<Face smooth="1" nx="0.92205" ny="-0.08732" nz="-0.37708" texture="-1" material="0">
+		<Vertex index="32" />
+		<Vertex index="30" />
+		<Vertex index="21" />
+	</Face>
+</Mesh>
+
