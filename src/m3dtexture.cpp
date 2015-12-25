@@ -226,8 +226,6 @@ int m3dTexture::loadPNG(unsigned char **data, png_uint_32 *width, png_uint_32 *h
 	png_structp pngPtr;
 	png_infop pngInfoPtr;
 	int bitDepth, colorType, interlaceType;
-// 	unsigned char header[4];
-	volatile int ckey = -1;
 	png_color_16 *transv;
 	png_bytep *rowPointers;
 	unsigned int row;
@@ -269,7 +267,6 @@ int m3dTexture::loadPNG(unsigned char **data, png_uint_32 *width, png_uint_32 *h
 		int num_trans;
 		unsigned char *trans;
 		png_get_tRNS(pngPtr, pngInfoPtr, &trans, &num_trans, &transv);
-		ckey = 0;
 	}
 
 	if(colorType != PNG_COLOR_TYPE_RGB_ALPHA || bitDepth != 8 || png_get_channels(pngPtr, pngInfoPtr) != 4)
@@ -447,7 +444,7 @@ GLuint m3dTexture::loadTexture(const char *filename)
 	if(m3dTexture::loadPNG(filename, &data, &width, &height) != 0)
 	{
 		fprintf(stderr, "Can't load texture %s\n", filename);
-		fprintf(stderr, "Width %d, Height %d\n",&width, &height);
+		fprintf(stderr, "Width %lu, Height %lu\n",(unsigned long int)&width, (unsigned long int)&height);
 		return 0;
 	}
 
