@@ -38,13 +38,13 @@ int Terrain::init(int w, int h)
 	if(roadTex2 == 0) return -1;
 	if(texture == 0) texture = m3dTexture::loadTexture("stone.png");
 	if(texture == 0) return -1;
-	
+
 	if(listBase == 0) listBase = glGenLists(64);
 	if(listBase == 0) return -1;
-	
+
 	if(normals) delete[] normals;
 	if(data) delete[] data;
-	
+
 	if(w <= h)
 	{
 		if(!isPow2(w)) return -1;
@@ -54,23 +54,23 @@ int Terrain::init(int w, int h)
 		if(!isPow2(h)) return -1;
 		if(w % h != 0) return -1;
 	}
-	
-	
+
+
 	data = new float[(w+1) * (h+1)];
 	if(data == NULL) return -1;
-	
+
 	for(int i = 0; i < (w+1)*(h+1); i++) data[i] = 0;
-	
+
 	width = w;
 	height = h;
-	
+
 	normals = new float[(w+1) * (h+1) * 3];
 	if(normals == NULL)
 	{
 		delete[] data;
 		return -1;
 	}
-	
+
 	return 0;
 }
 
@@ -78,7 +78,7 @@ float Terrain::getHeight(int x, int y) const
 {
 	if(data == NULL) return 0.0;
 	if(x < 0 || x > width || y < 0 || y > height) return 0.0;
-	
+
 	return data[(y * (width + 1)) + x];
 }
 
@@ -97,7 +97,7 @@ void Terrain::generate()
 	int xBlocks, yBlocks;
 	int blockSize;
 	int n;
-	
+
 	if(width <= height)
 	{
 		n = Terrain::log2(width); // log2(min(width,height))
@@ -111,7 +111,7 @@ void Terrain::generate()
 		xBlocks = (width / height);
 		blockSize = height;
 	}
-	
+
 	// seed the array
 	for(i = 0; i <= yBlocks; i++)
 	{
@@ -120,14 +120,14 @@ void Terrain::generate()
 			setHeight(j * blockSize, i * blockSize, 0.5f);
 		}
 	}
-	
+
 	// roughness parameters
 	const float h = 0.7;
 	const float heightScale = 3.0;
 	ratio = powf(2.0,-h);
 	scale = heightScale * ratio;
-	
-	
+
+
 	dim = 1 << n;
 	for(s = 0; s < n; s++)
 	{
@@ -158,7 +158,7 @@ void Terrain::generate()
 			{
 				x = j * dim;
 				y = i * dim;
-				
+
 				if(j < (1 << s) * xBlocks)
 				{
 					avg = 0;
@@ -167,7 +167,7 @@ void Terrain::generate()
 					avg /= 2.0;
 					setHeight(x + (dim >> 1), y, avg + scale * (random() -0.5f));
 				}
-				
+
 				if(i < (1 << s) * yBlocks)
 				{
 					avg = 0;
@@ -187,7 +187,7 @@ void Terrain::normalize()
 {
 	float min = 1e10, max = -1e10;
 	int i, j;
-	
+
 	for(i = 0; i <= height; i++)
 	{
 		for(j = 0; j <= width; j++)
@@ -197,7 +197,7 @@ void Terrain::normalize()
 			if(h > max) max = h;
 		}
 	}
-	
+
 	for(i = 0; i <= height; i++)
 	{
 		for(j = 0; j <= width; j++)
@@ -215,13 +215,13 @@ bool Terrain::isPow2(int x)
 int Terrain::log2(int x)
 {
 	int n = 0;
-	
+
 	while(x != 0 && !(x & 1))
 	{
 		n++;
 		x >>= 1;
 	}
-	
+
 	return n;
 }
 
@@ -236,14 +236,14 @@ float Terrain::random()
 	const int m  = 2147483647;
 	const int q  = (m / a);
 	const int r  = (m % a);
-	
+
 	int hi = seed / q;
 	int lo = seed % q;
 	int test = a * lo - r * hi;
-	
+
 	if(test > 0) seed = test;
 	else seed = test + m;
-	
+
 	return (float)seed / m;
 }
 
@@ -257,17 +257,17 @@ void Terrain::vertex(int x, int y)
 void Terrain::draw()
 {
 	int i, j;
-	
+
 	for(i = 0; i < height - 1; i++)
 	{
 		glBegin(GL_TRIANGLE_STRIP);
-		
+
 		for(j = 0; j < width; j++)
 		{
 			vertex(j, i);
 			vertex(j, i+1);
 		}
-		
+
 		glEnd();
 	}
 }
@@ -331,7 +331,7 @@ void Terrain::vectornorm(float *v) const
 	float l = sqrtf(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
 	v[0] /= l;
 	v[1] /= l;
-	v[2] /= l;	
+	v[2] /= l;
 }
 
 float Terrain::vectorlen(const float *v) const
@@ -342,14 +342,14 @@ float Terrain::vectorlen(const float *v) const
 void Terrain::computeNormals()
 {
 	const int delta[4][2] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
-	
+
 	float *normal;
 	float temp[3];
 	float v0[3], v1[3], v2[3];
 	float weight;
 	int i, j, k;
 	int x1, y1, x2, y2;
-	
+
 	for(i = 0; i <= height; i++)
 	{
 		for(j = 0; j <= width; j++)
@@ -358,12 +358,12 @@ void Terrain::computeNormals()
 			normal[0] = 0.0;
 			normal[1] = 0.0;
 			normal[2] = 0.0;
-			
-			
+
+
 			v0[0] = j * VERTEX_DIST;
 			v0[1] = getHeight(j, i) * HEIGHT_SCALE;
 			v0[2] = i * VERTEX_DIST;
-			
+
 			weight = 0.0;
 			for(k = 0; k < 4; k++)
 			{
@@ -371,28 +371,28 @@ void Terrain::computeNormals()
 				y1 = i + delta[k][1];
 				x2 = j + delta[(k+1)%4][0];
 				y2 = i + delta[(k+1)%4][1];
-				
+
 				if(x1 < 0 || x1 > width || y1 < 0 || y1 > height) continue;
 				if(x2 < 0 || x2 > width || y2 < 0 || y2 > height) continue;
-			
+
 				v1[0] = x1 * VERTEX_DIST;
 				v1[1] = getHeight(x1, y1) * HEIGHT_SCALE;
 				v1[2] = y1 * VERTEX_DIST;
 				vectorsub(v1, v0);
-				
+
 				v2[0] = x2 * VERTEX_DIST;
 				v2[1] = getHeight(x2, y2) * HEIGHT_SCALE;
 				v2[2] = y2 * VERTEX_DIST;
 				vectorsub(v2, v0);
-				
+
 				xproduct(v2, v1, temp);
 				vectornorm(temp);
-				
+
 				vectoradd(normal, temp);
-			
+
 				weight += 1.0;
 			}
-			
+
 			vectormul(1.0 / weight, normal);
 		}
 	}
@@ -401,13 +401,13 @@ void Terrain::computeNormals()
 void Terrain::descent(int start)
 {
 	int i, j;
-	
+
 	for(j = 0; j <= width; j++)
 	{
 		float maximum = getHeight(j, start);
 // 		float minimum = 0.5 * maximum;
 		float minimum = 0.0;
-		
+
 		for(i = start + 1; i <= height; i++)
 		{
 			float x = (float)(i - start - 1) / (height - start - 1);
@@ -425,7 +425,7 @@ void Terrain::drawRoad(int n)
 	{
 		if(i == FINISH_LINE) glBindTexture(GL_TEXTURE_2D, goalTex);
 		if(i == FINISH_LINE+1) glBindTexture(GL_TEXTURE_2D, roadTex2);
-		
+
 		glBegin(GL_TRIANGLE_STRIP);
 		for(int j = 0; j <= 2; j++)
 		{
@@ -441,7 +441,7 @@ void Terrain::drawRoad(int n)
 void Terrain::createList(GLuint list, int x0, int y0, int w, int h)
 {
 	glNewList(list, GL_COMPILE);
-	
+
 	for(int i = 0; i < w; i++)
 	{
 		glBegin(GL_TRIANGLE_STRIP);
@@ -454,7 +454,7 @@ void Terrain::createList(GLuint list, int x0, int y0, int w, int h)
 		}
 		glEnd();
 	}
-	
+
 	glEndList();
 }
 
@@ -472,49 +472,49 @@ void Terrain::createLists()
 void Terrain::drawLists(const float *eye, const float *at, float fovDiag, float dz)
 {
 	float vec[3];
-	
+
 	vec[0] = at[0];
 	vec[1] = at[1];
 	vec[2] = at[2];
 	vectornorm(vec);
-	
+
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, texture);
-	
+
 	int drawn = 0;
-	
+
 	for(int i = 0; i < 32; i++)
 	{
 		for(int j = 0; j < 2; j++)
 		{
-			float pos[3] = {i * 16 * VERTEX_DIST - eye[0], 5.0 - eye[1], j * 16 * VERTEX_DIST + dz - eye[2]};
+			float pos[3] = {i * 16 * VERTEX_DIST - eye[0], 5 - eye[1], j * 16 * VERTEX_DIST + dz - eye[2]};
 			float len;
 			bool inside = false;
-			
+
 			len = vectorlen(pos);
 			if(acosf(dotproduct(pos, vec) / len) < fovDiag) inside = true;
-			
+
 			if(!inside)
 			{
 				pos[0] = (i + 1) * 16 * VERTEX_DIST - eye[0];
 				len = vectorlen(pos);
 				if(acosf(dotproduct(pos, vec) / len) < fovDiag) inside = true;
 			}
-			
+
 			if(!inside)
 			{
 				pos[2] = (j + 1) * 16 * VERTEX_DIST + dz - eye[2];
 				len = vectorlen(pos);
 				if(acosf(dotproduct(pos, vec) / len) < fovDiag) inside = true;
 			}
-			
+
 			if(!inside)
 			{
 				pos[0] = i * 16 * VERTEX_DIST - eye[0];
 				len = vectorlen(pos);
 				if(acosf(dotproduct(pos, vec) / len) < fovDiag) inside = true;
 			}
-			
+
 			if(inside)
 			{
 				glCallList(listBase + j * 32 + i);
@@ -522,7 +522,6 @@ void Terrain::drawLists(const float *eye, const float *at, float fovDiag, float 
 			}
 		}
 	}
-	
+
 	glDisable(GL_TEXTURE_2D);
 }
-
